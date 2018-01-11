@@ -1,0 +1,126 @@
+/*section de présentation des produits*/
+/*section des produits*/
+.h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  background-color: rgb(249, 177, 42);
+  padding: 6px 0px 6px 0px;
+}
+#bloc2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  background-image: url("../img/pat3.jpg");
+  
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  background-size: contain;
+  padding-bottom: 26px;
+}
+#bloc3{
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  background-image: url("../img/pat2.jpg");
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  background-size: contain;
+  padding-bottom: 25px;
+}
+.titres2{
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  font-family: cursive;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+.cadrephoto{
+  position: relative;
+  background-size: cover;
+  background-color: white;
+  padding: 2px 2px 2px 2px;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height:60%;
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  margin-left: 22px;
+  margin-right: 18px;
+  margin-top: 30px;
+}
+.prix{
+ text-align: right;
+ font-size: 14px;
+ padding-right: 20px;
+ padding-top: 3px;
+}
+.prix2{
+ text-align: right;
+ font-size: 14px;
+ padding-right: 20px;
+ padding-top: 6px;
+}
+.photo{
+  margin-left: 32px;
+  margin-top: 16px;
+  height: 70%;
+  width: 70%;
+  filter: saturate(200%);
+}
+.cadrephoto:hover{
+  height: 26%;
+  width: 26%;
+  }
+.photo2{
+  margin-left: 32px;
+  margin-top: 16px;
+  height: 70%;
+  width: 70%;
+  filter: saturate(200%);
+}
+.divphoto{
+  display: flex;
+  align-items: center;
+}
+.tphoto{
+  text-transform: capitalize;
+  color: black;
+  padding-left: 20px;
+  font-size: 10px;
+}
+.tleft{
+  float: left;
+}
+.pright{
+  float: right;
+}
+.clear{
+  clear: both;
+}
+.blocprix{
+  border: 1px solid black;
+  padding: 3px;
+  background: white;
+  box-shadow: 6px 6px 6px black ;
+  font-family: 'Ubuntu', sans-serif;
+}
+.blocprix2{
+  border: 1p0x solid black;
+  padding: 3px;
+  background: white;
+  box-shadow: 6px 6px 6px black ;
+  font-family: 'Ubuntu', sans-serif;
+  }
+  .fbloc{
+    margin-bottom: 10px;
+  }
+/*fin de la section de prsentation produit*/

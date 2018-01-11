@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gitfi- reduc</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel='stylesheet' type='text/css' href='../css/janken.css'/>
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  </head>
+  <body onload= 'decompte()'>
+    <header>
+      <div class="haut">
+        <div class="imglogo">
+          <a href="../index.html"><img src="../img/Gifti5.png" alt="logo"/></a>
+        </div>
+        <div class="recherche">
+          <input class="input1"type="text" id="nom" name="nom" placeholder="Votre recherche">
+          <button class="search"><i class="fas fa-search fa-1x"></i></button>
+        </div>
+        <div class="panier">
+          <i class="fas fa-cart-plus fa-2x" ></i>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li class="droit int"><a href="../index.html"><span>Accueil</span></a></li>
+          <li class="droit int"><a href="moinsde5ans.html"><span>Moins</span><span>de</span><span>5 ans</span></a></li>
+          <li class="menu int"><a href="filles.html"><span>Filles</span></a></li>
+          <li class="menu int"><a href="garcon.html"><span>Garçons</span></a></li>
+          <li class="droit int"><a href="jeuxsociete.html"><span>Jeux</span><span>de</span><span>société</span></a></li>
+          <li class="droit int"><a href="jeuxvideo.html"><span>Jeux</span><span>vidéo</span></a></li>
+          <li class="droit int"><a href="Gain_reduc.html"><span>Je gagne</span><span>mes</span><span>réductions!</span></a></li>
+          <li class="menu"><a href="contact.html"><span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    </div>
+    <div class="conteneurG">
+      <center>
+      <div id="chrono"></div>
+    </center>
+        <div class="plateau">
+      <center>
+      <div class="images">
+
+          <h1>A vous de choisir</h1>
+
+          <img id="pierre" src="../img/choix1.png" alt="" onclick ="ChoixJoueur(this.src),ChoixOrdinateur(),comparer(1,rangAlea)"/>
+          <img id="feuille" src="../img/choix2.png" alt="" onclick ="ChoixJoueur(this.src),ChoixOrdinateur(),comparer(2,rangAlea)"/>
+          <img id="ciseaux" src="../img/choix3.png" alt="" onclick ="ChoixJoueur(this.src),ChoixOrdinateur(),comparer(3,rangAlea)"/>
+
+    </div>
+        <div class="boite_Cont">
+          <img class="choix" src="" alt="" />
+          <img class="choixOrdi" src="" alt="" />
+        <div>
+          <div class="res"></div>
+          <br>
+          <div class="pointJoueur"></div>
+          <br>
+          <div class="pointOrdi"></div>
+          <!-- <a href="pages/Gain_reduc.html" target="_blank"> <input class="reset" type="button" value="Bouton"> </a> -->
+          <a href="Gain_reduc.html"> <input class="reset" type="button" value="Redémarrer"> </a>
+          <button type="button" name="button" class="codeReduc"onclick="codeAlea()">Cliquer pour obtenir votre Code Promotionnel</button>
+        </div>
+        </div>
+      </div>
+        </center>
+        <script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+        <script type="text/javascript" src="../js/janken.js"></script>
+      </div>
+          <footer>
+            <div class="textfoot"> &copy;2018 Kevin Gato - Gifti
+            </div>
+            <div class="footM">
+               <a href="mentionslegales.html">Mentions légales</a>
+             </div>
+            </div>
+            <div class="boiteicone">
+              <a class="icone1" href="https://www.facebook.com/gifti.jouets.7" target="_blank">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+              <a class="icone2" href="https://twitter.com/Gifti_jouets" target="_blank">
+              <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+            <a class="icone3"href="https://www.instagram.com/gifti.jouets/" target="_blank">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a class="icone4"href="contact.html">
+              <i class="fas fa-envelope-square fa-2x"></i>
+            </a>
+          </div>
+          </footer>
+          <div class="moveup">
+            <span class="fa fa-angle-up fleche" onclick="topFunction()"></span>
+          </div>
+  </body>
+</html>

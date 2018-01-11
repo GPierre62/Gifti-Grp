@@ -1,0 +1,30 @@
+.boiteNoir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1%;
+  background-image: url("../img/test.jpg");
+}
+.ChoixU{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.boiteInfo{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.un {
+
+}
+.deux {
+
+}
+.troi {
+
+}

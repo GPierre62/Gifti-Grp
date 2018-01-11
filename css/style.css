@@ -1,0 +1,527 @@
+/**************************STRUCTURE COMMUNE***********************************/
+
+/******************************HTML********************************************/
+html {
+  width: 100%;
+  min-height: 100%;
+  max-height: auto;
+  background-color: rgba(235, 240, 233, 0.84);
+}
+/*******************************BODY******************************************/
+body {
+  width: 80%;
+  min-height: 100%;
+  max-height: auto;
+  margin: 0;
+  margin-left: 10%;
+  background-color: rgba(235, 240, 233, 0.84);
+}
+/******************************HEADER*****************************************/
+/* div intégrant divs logo, barre de recherche et logo panier*/
+.haut {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*div intégrant le logo*/
+.imglogo {
+  width: 20%;
+}
+/*logo gifti*/
+header img {
+  width: 120%;
+  height: 120%;
+}
+.panier{
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  background: radial-gradient( white,rgba(235, 240, 233, 0.84));
+  border: 1px solid rgb(178, 178, 190);
+  color: rgb(249, 177, 42);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+}
+.panier:hover {
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  font-size: 0.9em;
+}
+.panier:active {
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  font-size: 0.9em;
+  background-color: black;
+}
+
+.search {
+  color: rgb(249, 177, 42);
+  height: 2em;
+  width: 3em;
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  background: radial-gradient( white,rgba(235, 240, 233, 0.84));
+  border: 1px solid rgb(178, 178, 190);
+}
+.search:hover {
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  font-size: 0.9em;
+}
+.search:active {
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+  background-color: black;
+  font-size: 0.9em;
+}
+.input1 {
+	width: 20vw;
+	height: 1.54em;
+	border-radius: 7px 7px 7px 7px;
+	border: 3px double rgb(178, 178, 190);
+}
+/******************************BARRE NAVIGATION********************************/
+nav {
+  background-color: rgb(249, 177, 42);
+  height: 7vw;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1%;
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+ul a:hover {
+  text-shadow: 2px 2px 2px black;
+}
+/*class pour les li, en 1 ligne de texte*/
+.menu {
+  list-style-type: none;
+  height: 4vw;
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 177, 42);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+/*class pour les li, en plusieurs lignes de texte*/
+.droit {
+  list-style-type: none;
+  height: 4vw;
+  width: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 177, 42);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+.droit a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+/* class pour les li avec bordure droite*/
+.int {
+  border-right: 0.5px dotted grey;
+}
+/********************************BANNIERE**************************************/
+.banniere {
+  width: 100%;
+  height: 20vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+}
+.banniere img {
+  width: 80vw;
+  filter:saturate(150%);
+}
+/*******************************FLECHE TOP*************************************/
+.moveup{
+    display: none;
+    height: 3%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+.fleche:hover{
+    cursor: pointer;
+}
+/******************************PAGE ACCUEIL************************************/
+/**************** BANNIERE DEFILANTE ACCUEIL ***********************************/
+/*.mySlides {display: none}*/
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*********PAGE FILLE (STRUCTURE GENERALE VALABLE POUR LES AUTRES PAGES)********/
+
+/***************************CONTENEUR DE LA PAGE*******************************/
+.conteneurF {
+  display: flex;
+  margin-top: 1%;
+}
+/*******FILTRE DE RECHERCHE (VALABLE POUR TOUTES LES PAGES)*********************/
+/*conteneur du filtre de recherche à gauche de la page*/
+.contenufiltre {
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+}
+.filtre {
+  width: 20%;
+  margin-right: 4%;
+  font-family:  'Ubuntu', sans-serif;
+}
+.titrefiltre {
+  display: flex;
+  justify-content: center;
+  font-size: 90%;
+  background-color: rgb(249, 177, 42);
+  color: white;
+  font-weight: bold;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+fieldset {
+  border: 1px solid rgb(249, 177, 42);
+}
+.checkbox1 legend {
+  color: rgb(249, 177, 42);
+  font-weight: bold;
+  font-style: italic;
+}
+.checkbox1 {
+  padding-top: 6%;
+  background-color: rgba(214, 210, 214, 0.50);
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+.fin {
+  padding-bottom: 3%;
+}
+/******************************CONTENU DE LA PAGE FILLE*************************/
+/*Titre page*/
+section h1 {
+  font-family: 'Ubuntu', sans-serif;
+}
+/*conteneur des divs entourant les cadres images de la page*/
+.conteneurC {
+  width:80%;
+}
+/*4 Divs entourants les 4 lignes de cadres image*/
+.ligne1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+.ligne2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+.ligne3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+.ligne4 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+/*div cadres image*/
+.cadre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+}
+/*div intégrant l'image*/
+.imgcadre {
+  display: flex;
+  justify-content: center;
+}
+.imgcadre img {
+  width: 15vw;
+  height: 15vw;
+}
+/*div intégrant les infos du produit*/
+.infocadre {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
+/*div intégrant le titre produit*/
+.presentation {
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+}
+.presentation h3 {
+  margin-bottom: 0.15%;
+  margin-top: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 100%;
+}
+/* div contenant les divs intégrant la disponibilité produit le prix et le panier*/
+.prez2 {
+  display: flex;
+  justify-content: space-around;
+}
+/*div intégrant la disponibilité produit*/
+.dispo {
+color: green;
+padding-left: 7%;
+}
+.dispo ul {
+  margin-bottom: 20%;
+  margin-top: 25%;
+  display: inline-block;
+}
+.dispo span {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+}
+/*div intégrant l'indisponibilité produit*/
+.indispo {
+color: red;
+padding-left: 7%;
+}
+.indispo ul {
+  margin-bottom: 20%;
+  margin-top: 25%;
+  display: inline-block;
+}
+.indispo span {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+}
+/*div intégrant le prix du produit*/
+.prix {
+
+}
+.prix p {
+  margin-bottom: 20%;
+  margin-top: 20%;
+  font-family: 'Ubuntu', sans-serif;
+  display: inline-block;
+}
+.panierpage {
+  display: flex;
+  align-items: center;
+}
+.panierpage .fille {
+  color: rgb(228, 27, 160);
+}
+.panierpage button {
+  display: flex;
+  align-items: center;
+  height: 60%;
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: none;
+  background-color: rgba(235, 240, 233, 0.84);
+  border: 1px solid lightgray;
+}
+.panierpage button:hover {
+  font-size: 110%;
+  box-shadow: 1px 1px 1px black;
+  background-color: rgba(235, 240, 233, 0.84);
+}
+.panierpage button:active {
+  background-color: lightgray;
+}
+/*style pour le bouton en cas d'indisponibilité*/
+.panierpageI {
+  display: flex;
+  align-items: center;
+}
+.panierpageI .fille {
+  color: lightgray;;
+}
+.panierpageI button {
+  display: flex;
+  align-items: center;
+  height: 60%;
+  border-radius: 7px 7px 7px 7px;
+  box-shadow: none;
+  background-color: rgba(235, 240, 233, 0.84);
+  border: 1px solid lightgray;
+}
+.prixI p {
+  margin-bottom: 20%;
+  margin-top: 28%;
+  font-family: 'Ubuntu', sans-serif;
+  display: inline-block;
+}
+/****************************PAGE MENTIONS LEGALES******************************/
+.conteneurF2 {
+  display: inline-block;
+  margin-top: 1%;
+}
+.contenufiltre2 {
+  box-shadow: 2px 2px 2px rgb(148,148,150);
+}
+.mentions {
+  text-align: justify;
+  font-family: 'Ubuntu', sans-serif;
+  float: right;
+}
+.filtre2 {
+  width: 13.8%;
+  margin-right: 4%;
+  font-family:  'Ubuntu', sans-serif;
+  position: fixed;
+}
+.titrefiltre2 {
+  display: flex;
+  justify-content: center;
+  font-size: 90%;
+  background-color: rgb(249, 177, 42);
+  color: white;
+  font-weight: bold;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.checkbox2 {
+  padding-top: 6%;
+  background-color: rgba(214, 210, 214, 0.50);
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+}
+.checkbox2 ol {
+  margin: 0;
+  padding-left: 30px;
+  font-size: 100%;
+}
+.fin2 {
+  padding-bottom: 6%;
+}
+.checkbox2 ol a {
+  color: black;
+}
+.textfoot a {
+  text-decoration: none;
+  color: white;
+}
+/****************************PAGE MOINS DE 5 ANS********************************/
+.panierpage .bambin {
+  color: rgb(241, 191, 16);
+}
+.panierpageI .bambin {
+  color: lightgray;
+}
+/******************************* PAGE GARCONS***********************************/
+.panierpage .garcon {
+  color: blue;
+}
+.panierpageI .garcon {
+  color: lightgray;
+}
+/*********************************PAGE JEUX SOCIETE*****************************/
+.panierpage .jeuxS {
+  color: green;
+}
+.panierpageI .jeuxS {
+  color: lightgray;
+}
+/*********************************JEUX VIDEO***********************************/
+.panierpage .jeuV {
+  color: black;
+}
+
+.panierpageI span {
+  color: lightgray;
+}
